@@ -1,0 +1,10 @@
+ This Project uses libpytorch. TO compile
+
+  mkdir build
+  cd build
+  cmake -DCMAKE_PREFIX_PATH=/absolute/path/to/libtorch
+  make
+
+  This should build the binary. Note that this project is linux only now. 
+  You need to download libtorch.
+
