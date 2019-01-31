@@ -5,16 +5,15 @@ project(cat-classifier)
 find_package(Torch REQUIRED)
 
 add_executable(
-    cat-classifier 
-    src/main.cpp
+        cat-classifier
+        src/main.cpp
 )
 
-target_link_libraries(
-    cat-classifier
-    PRIVATE "${TORCH_LIBRARIES}"
+target_link_libraries(cat-classifier
+        PRIVATE "${TORCH_LIBRARIES}"
 )
 
-set_target_properties(
-    cat-classifier 
-    PROPERTIES CXX_STANDARD 11
+set_property(
+        TARGET cat-classifier
+        PROPERTY CXX_STANDARD 11
 )

@@ -1,4 +1,4 @@
-#include<torch/torch.h>
+#include <torch/torch.h>
 #include <torch/cuda.h>
 #include <iostream>
 
